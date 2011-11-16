@@ -1,3 +1,4 @@
+require 'styx/engine'
 require 'styx/helpers'
 require 'styx/forms'
 require 'styx/initializer'
