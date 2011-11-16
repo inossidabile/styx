@@ -1,0 +1,3 @@
+:javascript
+  if (window.#{inits} && #{inits}.initialize) { #{inits}.initialize(#{data.to_json}) }
+  if (window.#{inits} && #{inits}.#{method}) { #{inits}.#{method}(#{data.to_json}) }
