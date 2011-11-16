@@ -14,12 +14,13 @@ module Styx
       end
 
       def styx_initialize()
-        data   = @styx_initialize_with
-
-        inits  = "#{controller_path.gsub('/', '_').camelize}Initializers"
-        method = "#{action_name}"
-
-        (render_to_string :partial => 'styx/initializer', :locals => {:inits => inits, :method => method, :data => data}).html_safe
+        result = render_to_string :partial => 'styx/initializer', :locals => {
+          :klass  => controller_path.gsub('/', '_').camelize,
+          :method => action_name, 
+          :data   => @styx_initialize_with
+        }
+        
+        result.html_safe
       end
     end
   end

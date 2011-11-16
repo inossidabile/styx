@@ -1,4 +1,6 @@
-@Styx = {}
+@Styx = {
+  Initializers: {}
+}
 
 @Styx.URL =
   go: (url, force=false) ->
