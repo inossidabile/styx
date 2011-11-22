@@ -101,13 +101,13 @@ If validation failed appropriate form fields will be wraped with native
 ```
 
 ```javascript
-# Light case
+// Light case
 Forms.attach('#foo_form')
 
 
-# Heavy case
-success_callback = function(data) {}    # Form validated and stored. Data is what you pass from server.
-error_callback = function() {}          # Form wasn't validated
+// Heavy case
+success_callback = function(data) {}    // Form validated and stored. Data is what you pass from server.
+error_callback = function() {}          // Form wasn't validated
 
 Forms.attach('#foo_form', success_callback, error_callback)
 ```
