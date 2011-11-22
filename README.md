@@ -121,7 +121,7 @@ Javascript part goes best with **Styx.Initializers**.
 
 ### Server side
 
-In common you just want to store your form as model. **Styx.Forms** come with predefined helper for this:
+In common you just want to store your form as a model. **Styx.Forms** come with a predefined helper for this:
 
 ```ruby
 # app/controllers/foos_controller.rb
@@ -135,18 +135,18 @@ def create
 end
 ```
 
-*response* parameter can either be passed as lambda{|x|}.
+*response* parameter can also be passed as lambda{|x|}.
 
-### What if form was invalid?
+### What if the form was invalid?
 
-First of all, *success_callback* and server-side block won't be called. *response* won't be return to JS.
-Validation errors for @entity will be returned instead. All invalid form fields will be wrapped with 
+First of all, *success_callback* and server-side block wouldn't be called. *response* wouldn't be return to JS.
+Instead validation errors for @entity will be returned. All invalid form fields will be wrapped with 
 
     <div class="field_with_errors">
     
 ### Server side without models
 
-To work without models (i.e. to serve login form) you can use two helpers
+You can use two helpers to work without models (i.e. to serve login form):
 
 ```ruby
   styx_form_respond_success(data)
@@ -156,5 +156,5 @@ To work without models (i.e. to serve login form) you can use two helpers
   styx_form_respond_failure(entity_name, fields) # fields = {'field_name' => 'error message'}
 ```
 
-To choose which fields have to be marked as invalid JS part will concatenate entity_name + field _name. So if
-you don't have entity, simply pass empty string as the first arg.
+JS part will concatenate *entity_name* + *field_name* to locate which fields have to be marked as invalid. 
+So if you don't have entity, simply pass empty string as the first arg.
