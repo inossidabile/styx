@@ -4,5 +4,5 @@ require 'styx/forms'
 require 'styx/initializer'
 
 ActionController::Base.send :include, Styx::Helpers
-ActionController::Base.send :include, Styx::Forms
-ActionController::Base.send :include, Styx::Initializer
+# ActionController::Base.send :include, Styx::Forms
+# ActionController::Base.send :include, Styx::Initializer
