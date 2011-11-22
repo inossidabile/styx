@@ -34,8 +34,8 @@ Initializer
 ------------
 
 In common each controller in Rails comes with *app/assets/javascripts/controller_name.js.coffee*. 
-**Styx.Initializer** allows you to separately define bootstrap logic for each Rails action and pass
-some data from server right in.
+**Styx.Initializer** allows you to define bootstrap logic for each Rails action separately and 
+pass some data from server right into it.
 
 To enable initializers bootstrap, add *styx_initialize* line to your layout:
 
