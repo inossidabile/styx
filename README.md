@@ -1,11 +1,11 @@
 Styx
 ========
 
-Bridge between Server (Rails) side and Client (JS) side divided into several modules:
+Bridge between Server (Rails) side and Client (JS) side which is divided into several modules:
 
 * **Helpers**: set of helpers to support all other modules.
 * **Initializer**: organizes JS into bootstrap classes and allows you to pass data from controller/view.
-* **Forms**: remote validaton engine.
+* **Forms**: remote validation engine.
 
 
 Installation
@@ -34,7 +34,7 @@ Initializer
 ------------
 
 In common each controller in Rails comes with *app/assets/javascripts/controller_name.js.coffee*. 
-Styx.Initializer allows you to separately define bootstrap logic for each Rails action and pass
+**Styx.Initializer** allows you to separately define bootstrap logic for each Rails action and pass
 some data from server right in.
 
 To enable initializers bootstrap, add *styx_initialize* line to your layout:
@@ -114,14 +114,14 @@ error_callback = function() {}          // Form wasn't validated
 Forms.attach('#foo_form', success_callback, error_callback)
 ```
 
-Note that if success_callback was not given but server responded with some data, Styx.Forms will try
+Note that if success_callback was not given but server responded with some data, **Styx.Forms** will try
 to evaluate it as URL and will try to redirect to it.
 
-Javascript part goes best with Styx.Initializers.
+Javascript part goes best with **Styx.Initializers**.
 
 ### Server side
 
-In common you just want to store your form as model. Styx.Forms come with predefined helper for this:
+In common you just want to store your form as model. **Styx.Forms** come with predefined helper for this:
 
 ```ruby
 # app/controllers/foos_controller.rb
