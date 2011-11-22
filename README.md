@@ -91,7 +91,7 @@ If validation failed appropriate form fields will be wraped with native
 
     <div class="field_with_errors">
      
-### Binding
+### Client side
 
 ```erb
 # app/views/foos/new.html.erb
@@ -114,6 +114,8 @@ Forms.attach('#foo_form', success_callback, error_callback)
 
 Note that if success_callback was not given but server responded with some data, Styx.Forms will try
 to evaluate it as URL and will try to redirect to it.
+
+Javascript part goes best with Styx.Initializers.
 
 ### Server side
 
