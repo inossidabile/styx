@@ -144,7 +144,7 @@ Validation errors for @entity will be returned instead. All invalid form fields 
     
 ### Server side without models
 
-To work without models (i.e. to server login form) you can use two helpers
+To work without models (i.e. to serve login form) you can use two helpers
 
 ```ruby
   styx_form_respond_success(data)
