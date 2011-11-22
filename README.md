@@ -89,7 +89,7 @@ Forms
 Forms assist *form_for @foo, :remote => true* to automate server response and UJS callbacks. 
 
 If everything went smooth you can respond with URL for redirect or with JSON for your callback.
-If validation failed appropriate form fields will be wraped with native 
+If validation failed appropriate form fields will be wrapped in a native way:
 
     <div class="field_with_errors">
      
@@ -140,7 +140,7 @@ end
 ### What if form was invalid?
 
 First of all, *success_callback* and server-side block won't be called. *response* won't be return to JS.
-Validation errors for @entity will be returned instead. All invalid form fields will be wraped with 
+Validation errors for @entity will be returned instead. All invalid form fields will be wrapped with 
 
     <div class="field_with_errors">
     
