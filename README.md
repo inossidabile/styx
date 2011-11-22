@@ -11,8 +11,10 @@ Bridge between Server (Rails) side and Client (JS) side divided into several mod
 Installation
 ------------
 
-    $ gem install styx
+In your Gemfile, add this line:
 
+    gem 'styx'
+    
 
 Basic Usage
 ------------
