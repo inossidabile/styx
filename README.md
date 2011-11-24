@@ -15,6 +15,10 @@ In your Gemfile, add this line:
 
     gem 'styx'
     
+In your application.js include appropriate libs:
+
+    //= require styx           <- Helpers and Initializers
+    //= require styx.forms     <- Forms
 
 Basic Usage
 ------------
