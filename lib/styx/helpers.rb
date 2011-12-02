@@ -9,15 +9,23 @@ module Styx
 
     module InstanceMethods
       def this_page?(mask)
-        mask = mask.split('#')
+        mask = [mask] unless mask.is_a?(Array)
 
-        c = mask[0]
-        a = mask[1]
+        flag = false
 
-        flag = true
+        mask.each do |m|
+          m = m.to_s.split('#')
 
-        flag = false if !c.blank? && c != controller_path
-        flag = false if !a.blank? && a != action_name
+          c = m[0]
+          a = m[1]
+
+          f = true
+
+          f = false if !c.blank? && c != controller_name
+          f = false if !a.blank? && a != action_name
+
+          flag ||= f
+        end
 
         flag
       end
