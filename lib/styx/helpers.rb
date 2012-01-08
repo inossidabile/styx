@@ -16,9 +16,7 @@ module Styx
       end
 
       def this_namespace?(namespace)
-        current = controller_path.split('/').first
-
-        return namespace == current
+        namespace == controller_path.split('/').first
       end
     end
   end
