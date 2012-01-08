@@ -1,10 +1,9 @@
 module Styx
   module Helpers
-    def self.included base
-      base.send(:include, InstanceMethods)
-      base.class_eval do
-        helper_method :this_page?, :this_namespace?
-      end
+    extend ActiveSupport::Concern
+    
+    included do
+      helper_method :this_page?, :this_namespace?
     end
 
     module InstanceMethods

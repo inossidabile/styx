@@ -1,11 +1,10 @@
 module Styx
   module Initializer
-    def self.included base
-      base.send(:include, InstanceMethods)
-      base.class_eval do
-        helper_method :styx_initialize, :styx_initialize_with
-        before_filter { @styx_initialize_with = {} }
-      end
+    extend ActiveSupport::Concern
+    
+    included do
+      helper_method :styx_initialize, :styx_initialize_with
+      before_filter { @styx_initialize_with = {} }
     end
 
     module InstanceMethods

@@ -1,8 +1,6 @@
 module Styx
   module Forms
-    def self.included base
-      base.send(:include, InstanceMethods)
-    end
+    extend ActiveSupport::Concern
 
     module InstanceMethods
       def styx_form_store_and_respond(entity, data=nil, &block)
