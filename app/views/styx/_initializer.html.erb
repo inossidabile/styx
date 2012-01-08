@@ -1,0 +1,12 @@
+<script type="text/javascript">
+//<![CDATA[
+  if (Styx.Initializers.<%=klass%> && Styx.Initializers.<%=klass%>.initialize) 
+  {
+    Styx.Initializers.<%=klass%>.initialize(<%=data.to_json%>) 
+  }
+  if (Styx.Initializers.<%=klass%> && Styx.Initializers.<%=klass%>.<%=method%>) 
+  { 
+    Styx.Initializers.<%=klass%>.<%=method%>(<%=data.to_json%>) 
+  }
+//]]>
+</script>
