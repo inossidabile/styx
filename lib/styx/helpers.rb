@@ -9,25 +9,10 @@ module Styx
 
     module InstanceMethods
       def this_page?(mask)
-        mask = [mask] unless mask.is_a?(Array)
-
-        flag = false
-
-        mask.each do |m|
-          m = m.to_s.split('#')
-
-          c = m[0]
-          a = m[1]
-
-          f = true
-
-          f = false if !c.blank? && c != controller_name
-          f = false if !a.blank? && a != action_name
-
-          flag ||= f
+        [*mask].any? do |m|
+          c, a = m.to_s.split('#')
+          c.presence == controller_name || a.presence == action_name
         end
-
-        flag
       end
 
       def this_namespace?(namespace)
