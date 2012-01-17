@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.email       = "boris@roundlake.ru"
   s.homepage    = "http://github.com/roundlake/styx"
   s.description = s.summary
-  s.authors     = ['Boris Staal']
+  s.authors     = ['Boris Staal', 'Alexander Pavlenko']
 
   s.has_rdoc = false # disable rdoc generation until we've got more
   s.files         = `git ls-files`.split("\n")
