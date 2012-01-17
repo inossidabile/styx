@@ -167,6 +167,7 @@ License
 -------
 
     Copyright (C) 2011 by Boris Staal <boris@roundlake.ru>
+                          Alexander Pavlenko <a.pavlenko@roundlake.ru>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
