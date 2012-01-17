@@ -10,7 +10,7 @@ module Styx
       def this_page?(mask)
         [*mask].any? do |m|
           c, a = m.to_s.split('#')
-          c.presence == controller_name || a.presence == action_name
+          !(c.present? && c != controller_name || a.present? && a != action_name)
         end
       end
 
