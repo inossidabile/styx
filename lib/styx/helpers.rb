@@ -31,6 +31,7 @@ module Styx
       end
 
       def this_namespace?(namespace)
+        # TODO: support nested namespaces?
         current = controller_path.split('/').first
 
         return namespace == current
