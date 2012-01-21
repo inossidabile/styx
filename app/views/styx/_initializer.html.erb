@@ -4,9 +4,9 @@
   {
     Styx.Initializers.<%=klass%>.initialize(<%=data.to_json.html_safe%>) 
   }
-  if (Styx.Initializers.<%=klass%> && Styx.Initializers.<%=klass%>.<%=method%>) 
+  if (Styx.Initializers.<%=klass%> && Styx.Initializers.<%=klass%>['<%=method%>']) 
   { 
-    Styx.Initializers.<%=klass%>.<%=method%>(<%=data.to_json.html_safe%>) 
+    Styx.Initializers.<%=klass%>['<%=method%>'](<%=data.to_json.html_safe%>) 
   }
 //]]>
 </script>
