@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "styx"
-  s.version     = "0.1.0"
+  s.version     = "0.1.1"
   s.platform    = Gem::Platform::RUBY  
   s.summary     = "Set of helpers to maintain bridge between Server (Rails) side and Client (JS) side"
   s.email       = "boris@roundlake.ru"
