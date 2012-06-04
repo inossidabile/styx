@@ -14,8 +14,6 @@
   
       errors = jQuery.parseJSON xhr.responseText
   
-      console.log errors if console?
-  
       for field, notifications of errors.messages
         field = substitutions[field] if substitutions[field]?
         input = $(element).find("##{errors.entity}_#{field}")
