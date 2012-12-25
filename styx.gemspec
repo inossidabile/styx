@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY  
   s.summary     = "Set of helpers to maintain bridge between Server (Rails) side and Client (JS) side"
   s.email       = "boris@roundlake.ru"
-  s.homepage    = "http://github.com/roundlake/styx"
+  s.homepage    = "http://github.com/inossidabile/styx"
   s.description = s.summary
   s.authors     = ['Boris Staal', 'Alexander Pavlenko']
 

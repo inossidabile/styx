@@ -7,7 +7,7 @@ Bridge between Server (Rails) side and Client (JS) side which is divided into se
 * **Initializer**: organizes JS into bootstrap classes and allows you to pass data from controller/view.
 * **Forms**: remote validation engine.
 
-![Travis CI](https://secure.travis-ci.org/roundlake/styx.png)
+![Travis CI](https://secure.travis-ci.org/inossidabile/styx.png)
 
 
 Installation
