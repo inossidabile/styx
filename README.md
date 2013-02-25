@@ -168,8 +168,6 @@ So if you don't have entity, simply pass empty string as the first arg.
 Credits
 -------
 
-<img src="http://roundlake.ru/assets/logo.png" align="right" />
-
 * Boris Staal ([@_inossidabile](http://twitter.com/#!/_inossidabile))
 * Alexander Pavlenko ([@alerticus](http://twitter.com/#!/alerticus))
 
