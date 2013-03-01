@@ -169,7 +169,7 @@ So if you don't have entity, simply pass empty string as the first arg.
 Credits
 -------
 
-* Boris Staal ([@_inossidabile](http://twitter.com/#!/_inossidabile))
+* Boris Staal ([@_inossidabile](http://twitter.com/#!/_inossidabile)) [![endorse](http://api.coderwall.com/inossidabile/endorsecount.png)](http://coderwall.com/inossidabile)
 * Alexander Pavlenko ([@alerticus](http://twitter.com/#!/alerticus))
 
 LICENSE
