@@ -111,14 +111,14 @@ If validation failed appropriate form fields will be wrapped in a native way:
 
 ```javascript
 // Light case
-Joosy.Forms.validate('#foo_form')
+Styx.Forms.validate('#foo_form')
 
 
 // Heavy case
 success_callback = function(data) {}    // Form validated and stored. Data is what you pass from server.
 error_callback = function() {}          // Form wasn't validated
 
-Joosy.Forms.validate('#foo_form', success_callback, error_callback)
+Styx.Forms.validate('#foo_form', success_callback, error_callback)
 ```
 
 Note that if success_callback was not given but server responded with some data, **Styx.Forms** will try
