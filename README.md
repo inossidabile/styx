@@ -1,5 +1,4 @@
-Styx
-========
+# Styx
 
 Bridge between Server (Rails) side and Client (JS) side which is divided into several modules:
 
@@ -11,8 +10,7 @@ Bridge between Server (Rails) side and Client (JS) side which is divided into se
 [![Code Climate](https://codeclimate.com/github/inossidabile/styx.png)](https://codeclimate.com/github/inossidabile/styx)
 
 
-Installation
-------------
+## Installation
 
 In your Gemfile, add this line:
 
@@ -23,8 +21,7 @@ In your assets application.js include appropriate libs:
     //= require styx           <- Helpers and Initializers
     //= require styx.forms     <- Forms
 
-Basic Usage
-------------
+## Basic Usage
 
 ```ruby
 # app/controllers/foos_controller.rb
@@ -37,8 +34,7 @@ end
 Include modules to ApplicationController if you want to use it everywhere.
 
 
-Initializer
-------------
+### Initializer
 
 In common each controller in Rails comes with *app/assets/javascripts/controller_name.js.coffee*. 
 **Styx.Initializer** allows you to define bootstrap logic for each Rails action separately and 
@@ -90,8 +86,7 @@ As the result *Styx.Initializers.Foos->index* will be called with data equal to
     {some: data, and: {even: 'mode data'}, enabled: true}
     
 
-Forms
-------------
+### Forms
 
 Forms assist *form_for @foo, :remote => true* to automate server response and UJS callbacks. 
 
@@ -166,13 +161,10 @@ You can use two helpers to work without models (i.e. to serve login form):
 JS part will concatenate *entity_name* + *field_name* to locate which fields have to be marked as invalid. 
 So if you don't have entity, simply pass empty string as the first arg.
 
-Credits
--------
+## Maintainers
 
-* Boris Staal ([@_inossidabile](http://twitter.com/#!/_inossidabile)) [![endorse](http://api.coderwall.com/inossidabile/endorsecount.png)](http://coderwall.com/inossidabile)
-* Alexander Pavlenko ([@alerticus](http://twitter.com/#!/alerticus))
+* Boris Staal, [@inossidabile](http://staal.io)
 
-LICENSE
--------
+## License
 
 It is free software, and may be redistributed under the terms of MIT license.
