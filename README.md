@@ -1,13 +1,14 @@
 # Styx
 
+[![Gem Version](https://badge.fury.io/rb/styx.png)](http://badge.fury.io/rb/styx)
+[![Travis CI](https://secure.travis-ci.org/inossidabile/styx.png)](https://travis-ci.org/inossidabile/styx)
+[![Code Climate](https://codeclimate.com/github/inossidabile/styx.png)](https://codeclimate.com/github/inossidabile/styx)
+
 Bridge between Server (Rails) side and Client (JS) side which is divided into several modules:
 
 * **Helpers**: set of helpers to support all other modules.
 * **Initializer**: organizes JS into bootstrap classes and allows you to pass data from controller/view.
 * **Forms**: remote validation engine.
-
-[![Travis CI](https://secure.travis-ci.org/inossidabile/styx.png)](https://travis-ci.org/inossidabile/styx)
-[![Code Climate](https://codeclimate.com/github/inossidabile/styx.png)](https://codeclimate.com/github/inossidabile/styx)
 
 
 ## Installation
