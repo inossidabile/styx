@@ -169,3 +169,7 @@ So if you don't have entity, simply pass empty string as the first arg.
 ## License
 
 It is free software, and may be redistributed under the terms of MIT license.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/inossidabile/styx/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
